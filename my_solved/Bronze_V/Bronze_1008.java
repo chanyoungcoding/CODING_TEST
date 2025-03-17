@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * 백준 - 1008
+ * 2025-03-17
+ */
 public class Bronze_1008 {
   
   public static void main(String[] args) throws IOException {
