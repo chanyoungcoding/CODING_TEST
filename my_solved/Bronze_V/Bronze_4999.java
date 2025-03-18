@@ -1,0 +1,24 @@
+package Bronze_V;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * 백준 - 4999 ( 아! )
+ * 2025-03-18
+ */
+public class Bronze_4999 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        String a = br.readLine();
+        String b = br.readLine();
+
+        if(a.length() >= b.length()) {
+            System.out.println("go");
+        } else {
+            System.out.println("no");
+        }
+    }
+}

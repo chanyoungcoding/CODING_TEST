@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 /**
  * 백준 - 3003 ( 킹, 퀸, 룩, 비숍, 나이트, 폰 )
- * 2025-03-17
+ * 2025-03-18
  */
 public class Bronze_3003 {
 
