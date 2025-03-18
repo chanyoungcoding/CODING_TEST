@@ -10,6 +10,7 @@ import java.io.InputStreamReader;
  */
 public class Bronze_5522 {
     public static void main(String[] args) throws IOException {
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int num = 0;
@@ -18,7 +19,7 @@ public class Bronze_5522 {
 
             num += Integer.parseInt(br.readLine());
         }
-        
+
         System.out.println(num);
     }
 }
