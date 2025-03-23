@@ -9,9 +9,9 @@ import java.io.InputStreamReader;
  * 2025-03-21
  */
 public class Class_1546 {
-  
+
   public static void main(String[] args) throws IOException {
-    
+
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
     int num = Integer.parseInt(bf.readLine());
@@ -22,14 +22,14 @@ public class Class_1546 {
 
     double result = 0;
 
-    for(String strNum : str) {
+    for (String strNum : str) {
       int value = Integer.parseInt(strNum);
-      if(value > maxNum) {
+      if (value > maxNum) {
         maxNum = value;
       }
     }
 
-    for(String strNum : str) {
+    for (String strNum : str) {
       int value = Integer.parseInt(strNum);
       result += (double) value / maxNum * 100;
     }
