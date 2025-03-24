@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * 1978
+ * 2025-03-24
+ */
 public class Class_1978 {
   public static void main(String[] args) throws IOException {
 

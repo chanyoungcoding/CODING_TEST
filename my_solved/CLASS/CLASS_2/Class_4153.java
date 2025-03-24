@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * 4153
+ * 4153 ( 직각 삼각형 )
  * 2025-03-23
  */
 public class Class_4153 {
