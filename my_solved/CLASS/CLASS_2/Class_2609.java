@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 /**
  * 2609 ( 최대, 최소공배수 )
- * 2025-03-23
+ * 2025-03-25
  */
 public class Class_2609 {
 	public static void main(String[] args) throws IOException {
