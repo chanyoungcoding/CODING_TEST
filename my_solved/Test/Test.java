@@ -3,8 +3,7 @@ package Test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.ArrayList;
 
 public class Test {
 
@@ -14,48 +13,29 @@ public class Test {
 
     int N = Integer.parseInt(br.readLine());
 
-    Person[] persons = new Person[N];
+    ArrayList<Integer> result = new ArrayList<>();
 
     for (int i = 0; i < N; i++) {
-      int age = Integer.parseInt(br.readLine());
-      String name = br.readLine();
-
-      persons[i] = new Person(age, name);
-    }
-
-    Arrays.sort(persons, new Comparator<Person>() {
-      
-      @Override
-      public int compare(Person s1, Person s2) {
-        return s1.age - s2.age;
+      int num = Integer.parseInt(br.readLine());
+      if(num == 0) {
+        if(!result.isEmpty()) {
+          result.remove(result.size() - 1);
+        }
+      } else {
+        result.add(num);
       }
-    });
-
-    StringBuilder result = new StringBuilder();
-
-    for (int i = 0; i < N; i++) {
-      result.append(persons[i]);
     }
 
-    System.out.println(result);
+    int sum = 0;
+
+    for(int value : result) {
+      sum += value;
+    }
+
+    System.out.println(sum);
+
 
   }
 
-  public static class Person {
-  
-    int age;
-    String name;
-
-    public Person(int age, String name) {
-      this.age = age;
-      this.name = name;
-    }
-
-    @Override
-    public String toString() {
-      return age + " " + name + "\n";
-    }
-    
-  }
   
 }
